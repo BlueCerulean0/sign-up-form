@@ -23,10 +23,10 @@ body {
     .container {
         max-width: 90%;
         padding: 8px;
-        max-height: 800px;
+
     }
     #backimg {
-        display: none;
+        display: none !important;
     }
     #signWith,
     #nameContainer {
@@ -163,10 +163,12 @@ a {
 
 #create:hover {
     background-color: #23549c;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 }
 
 #create:active {
     background-color: #2331ad;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
 
 #register {
