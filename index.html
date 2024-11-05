@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up!</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="backimg">
+
+        </div>
+    
+
+        <div id="sign">
+            <div>
+                <h1>Create an account</h1>
+                <p>
+                    Already have an account? <a href="login.html">Log in</a>
+                </p>
+            </div>
+
+            <div id="form">
+
+                <form action="#" method="get" id="signUp">
+                    <fieldset id="info">
+                        <div id="nameContainer">
+                            <input type="text" id="firstName" placeholder="First Name">
+                            <input type="text" id="lastName" placeholder="Last Name">
+                        </div>
+                        <div id="map">
+                            <input type="email" placeholder="Email" name="email">
+                            <input type="password" placeholder="Enter your password" name="password">
+                        </div>
+                    </fieldset>
+                    
+                    <div id="tos">
+                        <input type="checkbox" id="checkTOS">
+                        <label for="checkTOS">I agree to the <a href="">Terms & Conditions</a></label>
+                    </div>
+                </form>
+                <button type="submit" id="create">Create account</button>
+                
+                <p id="register">Or regester with</p>
+                <div id="signWith">
+                    <button id="google"> 
+                        <img src="images/google.png" alt="Google" width=30px height="">
+                        <label for="google" class="lb">Google</label>
+                    </button>
+
+                    <button id="apple">
+                        <img src="images/apple.png" alt="Apple" width="30px" height="">
+                        <label for="apple" class="lb">Apple</label>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="sign.js"></script>
+</body>
+</html>

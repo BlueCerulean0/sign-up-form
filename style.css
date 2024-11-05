@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    background: linear-gradient(90deg, #4a90e2, #50e3c2, #4a90e2);
+    background-size: 300% 300%;
+    animation: swirl 20s infinite linear;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 10px;
+    font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@keyframes swirl {
+0% { background-position: 0% 50%; }
+50% { background-position: 100% 50%; }
+100% { background-position: 0% 50%; }
+}
+
+@media (max-width: 600px) {
+    .container {
+        max-width: 90%;
+        padding: 8px;
+        max-height: 800px;
+    }
+    #backimg {
+        display: none;
+    }
+    #signWith,
+    #nameContainer {
+        flex-wrap: wrap;
+    }
+}
+
+#sign {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+.container {
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(160, 207, 221, 0.315);
+    backdrop-filter: blur(100px);
+    box-shadow: -4px 4px rgba(71, 70, 70, 0.144);
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+    min-width: 100px;
+    max-height: 530px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#backimg {
+    display: flex;
+    background-image: url(images/nathan.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 450px;
+    padding: 10px;
+    border: 10px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+input {
+    outline: 0;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 0;
+    margin: 5px;
+    background-color: #3b364c;
+    border-radius: 4px;
+    padding: 10px;
+    color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.6);;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    border: 10px;
+    margin: 10px;
+    gap: 10px;
+}
+
+#signUp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+    width: 250px;
+}
+
+#nameContainer {
+    display: flex;
+    width: 100%;
+}
+
+#nameContainer input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    color: white;
+    background-color: #3b364c;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+#map {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #6e54b5;
+}
+
+#create {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 240px;
+    padding: 8px;
+    background-color: #0954e0;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    overflow: hidden;
+}
+
+
+
+#create:hover {
+    background-color: #23549c;
+}
+
+#create:active {
+    background-color: #2331ad;
+}
+
+#register {
+    margin-bottom: -8px;
+}
+
+#signWith {
+    border: 10px;
+    margin: 5px;
+    display: flex;
+    
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    width: auto;
+    height: auto;
+}
+
+.lb {
+    cursor: pointer;
+}
+
+#google, #apple {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+    margin: 3px;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 8px 30px 6px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1;
+    transition: transform 200ms,background 200ms;
+    background: transparent;
+    color: #ffffff;
+    box-shadow: 0 0 0 1px #ffffff inset;
+    transition: all 0.3s ease-in-out;
+}
+
+#google:hover, #apple:hover {
+    transform: translateY(-4px);
+    background-color: rgba(255, 255, 255, 0.288);
+    box-shadow: 1px 1px 200px #979696;
+    color: #fff;   
+}
+
+  
